@@ -1,0 +1,75 @@
+/* Import de la font de la pagina */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+/* Colors de la pagina
+Color Principal: #083346
+Segon Color: #046C95
+Tercer Color: #0196C1
+Quart Color: #48B5D6
+Cinque Color: #B3E0EE */
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... }
+
+/* Estil que s'aplica a tota la pagina web */
+*{
+    font-family: 'Rubik', sans-serif;
+}
+
+header{
+    height: 500px;
+}
+
+.navEsquerra{
+    display: inline-block;
+    padding-top: 70px;
+
+}
+
+.navEsquerra .nav-item{
+    display: inline-block;
+    padding: 25px;
+}
+
+header{
+    background-color: #0196C1;
+    color: white;
+}
+
+.titul{
+    margin-top: 20px;
+}
+
+.titul .brd-1{
+    margin-bottom: 100px;
+    border-radius: 10px;
+    background-color: #0196C1;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+}
+
+.navEsquerra li a{
+    color: white;
+}
+
+.dropdown{
+    display: inline-block;
+    margin-left: 500px;
+}
+
+.dropdownMenuButton{
+    min-width: none !important;
+}

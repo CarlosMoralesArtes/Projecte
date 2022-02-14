@@ -1,21 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Connexio amb el arxiu de estils -->
+    <link rel="stylesheet" href="estils.css">
+    <!-- Icone que es coloca en la pagina -->
+    <link rel="shortcut icon" href="./images/logo.png">
     <!-- Conexio amb bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Titul de la pagina -->
     <title>Carlos Morales Artés</title>
 </head>
-<!-- Cos de la Pagina -->
-<body>
+<header>
     <div class="container">
-        <h1>Hola</h1>
+        <ul class="navbar-nav ml-lg-auto">
+            <div class="navEsquerra">
+                <img src="./images/logo.png" width="50px">
+                <li class="nav-item">
+                    <a href="#Home" class="nav-link smooth Scroll">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Sobre Mi" class="nav-link smooth Scroll">Sobre Mi</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Ubicació" class="nav-link smooth Scroll">Ubicació</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Projectes" class="nav-link smooth Scroll">Projectes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Contacta" class="nav-link smooth Scroll claseNavBordes">Contacta</a>
+                </li>
+                <!-- Dropdown per canviar de idioma a Espanyol, Català o Anglés -->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ES
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">CA</a>
+                        <a class="dropdown-item" href="#">USA</a>
+                    </div>
+                </div>
+            </div>
+        </ul>
+        <div class="titul" style="padding-left: 30px">
+            <h3 style="font-size: 15px;">PÁGINA PRINCIPAL</h3>
+            <h1 style="font-weight: 900">Carlos<br>Morales<br>Artés</h1>
+            <h3 style="font-size: 15px; padding-top: 10px; padding-bottom: 10px;">Web Personal</h3>
+            <button class="brd-1">Veure Més</button>
+        </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
-    crossorigin="anonymous"></script>
+</header>
+<!-- Cos de la Pagina -->
+
+<body>
+    <!-- Scripts necesaris per bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
