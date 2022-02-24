@@ -8,24 +8,295 @@ Tercer Color: #2C3256
 Quart Color: #48B5D6
 Cinque Color: #B3E0EE */
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .imatge{
+        width: 550px !important;
+        height: 400px !important;
+        margin-left: 0px !important;
+    }
+    
+    .imatge img{
+        width: 100% !important;
+        height: 100% !important;
+    }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
+    .imatgesJuntes{
+        width: 500px !important;
+    }
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
+    .suport{
+        width: 145px !important;
+        height: 100px !important;
+    }
 
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
+    .suport h1{
+        font-size: 15px !important;
+    }
 
-// XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) { ... }
+    .experiencia{
+        width: 145px !important;
+        height: 100px !important;
+        text-align: center;
+    }
+
+    .experiencia h1{
+        font-size: 15px !important;
+        text-align: center;
+    }
+
+    .completats{
+        width: 145px !important;
+        height: 100px !important;
+    }
+
+    .completats h1{
+        font-size: 15px !important;
+    }
+
+    .experience .backend{
+        margin-top: 20px !important;
+        width: 500px !important;
+        height: 300px !important;
+    }
+
+    .experience .frontend{
+        width: 500px !important;
+        height: 300px !important;
+        margin-top: 20px !important;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .imatge{
+        width: 500px !important;
+        height: 350px !important;
+        margin-left: 25px !important;
+    }
+    
+    .imatge img{
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .imatgesJuntes{
+        width: 500px !important;
+        margin-left: 25px !important;
+    }
+
+    .experience .backend{
+        margin-top: 20px !important;
+        width: 500px !important;
+        height: 300px !important;
+    }
+
+    .experience .frontend{
+        width: 500px !important;
+        height: 300px !important;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .imatge{
+        width: 600px !important;
+        margin-left: 55px !important;
+        height: 400px !important;
+    }
+    
+    .imatge img{
+        width: 100% !important;
+        height: 100% !important;
+    }
+    
+    .imatgesJuntes{
+        width: 500px !important;
+        margin-left: 105px !important;
+    }
+
+    .experience .backend{
+        margin-top: 20px !important;
+        width: 500px !important;
+        height: 300px !important;
+    }
+
+    .experience .frontend{
+        width: 500px !important;
+        height: 300px !important;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .imatge{
+        width: 400px !important;
+        height: 320px !important;
+    }
+    
+    .imatge img{
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .imatgesJuntes{
+        width: 400px !important;
+        margin-left: 0px;
+        text-align: left;
+    }
+
+    .suport{
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .suport h1{
+        font-size: 15px !important;
+    }
+
+    .experiencia{
+        width: 100px !important;
+        height: 100px !important;
+        text-align: center;
+    }
+
+    .experiencia h1{
+        font-size: 15px !important;
+        text-align: center;
+    }
+
+    .completats{
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .completats h1{
+        font-size: 15px !important;
+    }
+
+    .experience .backend{
+        margin-top: 20px !important;
+        width: 500px !important;
+        height: 300px !important;
+    }
+
+    .experience .frontend{
+        width: 500px !important;
+        height: 300px !important;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .imatge{
+        width: 500px !important;
+        height: 400px !important;
+    }
+    
+    .imatge img{
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .imatgesJuntes{
+        width: 400px !important;
+    }
+
+    .experience .backend{
+        margin-top: 0px !important;
+        width: 500px !important;
+        height: 300px !important;
+    }
+
+    .experience .frontend{
+        width: 500px !important;
+        height: 300px !important;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .imatge{
+        width: 500px !important;
+        height: 400px !important;
+        margin-left: 100px !important;
+    }
+    
+    .imatge img{
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .imatgesJuntes{
+        width: 500px !important;
+        height: 400px !important;
+    }
+
+    .experiencia{
+        width: 130px !important;
+        height: 110px !important;
+    }
+
+    .completats{
+        width: 130px !important;
+        height: 110px !important;
+    }
+
+    .suport{
+        width: 130px !important;
+        height: 110px !important;
+    }
+
+    .backend .var1{
+        margin-top: 20px !important;
+        padding-left: 110px !important;
+    }
+
+    .experience .backend{
+        width: 500px !important;
+        height: 300px !important;
+    }
+
+    .experience .frontend{
+        width: 500px !important;
+        height: 300px !important;
+    }
+}
 
 /* Estil que s'aplica a tota la pagina web */
 *{
     font-family: 'Rubik', sans-serif;
+}
+
+.fixed-bottom{
+    background: #0196C1 !important;
+    margin: 0 auto !important;
+    width: 270px;
+    height: 50px;
+    border-radius: 50px;
+    margin-bottom: 1000px;
+    opacity: 0.8 !important;
+    border: 2px solid #999999 !important;
+    align-items: center;
+    bottom: 20px !important;
+}
+
+.fixed-bottom .nav li{
+    list-style: none !important;
+    display: inline-block;
+}
+
+.menu{
+    width: 15px;
+}
+
+.nav ul li{
+    padding: 10px;
+}
+
+.nav ul li:hover{
+    background: #015bc1 !important;
+    border-radius: 100%;
 }
 
 body{
@@ -137,7 +408,7 @@ body{
 }
 
 .experiencia{
-    background-color: #1a1a30;
+    background-color: #1e1e33;
     border-radius: 10px;
     width: 150px;
     height: 120px;
@@ -145,7 +416,7 @@ body{
 }
 
 .completats{
-    background-color: #1a1a30;
+    background-color: #1e1e33;
     margin-left: 5px;
     border-radius: 10px;
     width: 150px;
@@ -154,12 +425,35 @@ body{
 }
 
 .suport{
-    background-color: #1a1a30;
+    background-color: #1e1e33;
     margin-left: 5px;
     border-radius: 10px;
     width: 150px;
     height: 120px;
     display: inline-block !important;
+    position: relative;
+}
+
+/* Estil per les imatges del sobre mi */
+.experiencia img{
+    margin:auto;
+    display:block;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.completats img{
+    margin:auto;
+    display:block;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.suport img{
+    margin:auto;
+    display:block;
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
 
 .imatgesJuntes{
@@ -232,16 +526,74 @@ body{
 
 /* Estil per la part de la meva experiencia */
 .frontend{
-    background-color: #1a1a30;
-    margin-left: 5px;
+    margin:auto;
+    display:block;
+    padding-top: 15px;
+    padding-bottom: 10px;
     border-radius: 10px;
-    height: 250px;
+    background-color: #1e1e33;
+}
+
+.frontend .experiencies{
+    margin:auto;
+    display:block;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 105px;
+}
+
+.frontend .titulfront{
+    height: 7px;
+    font-size: 14px;
+}
+
+.frontend .distancia{
+    margin-bottom: 20px;
+    font-size: 10px;
+}
+
+.backend .experiencies2{
+    margin:auto;
+    display:block;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.var1{
+    padding-top: 10px;
+    margin: auto;
+    margin-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    width: 150px;
     display: inline-block;
-    margin-top: 50px;
-    margin-left: 210px;
+}
+
+.var2{
+    padding-top: 10px;
+    margin:auto;
+    margin-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    width: 150px;
+    height: 200px;
+    display: inline-block;
+}
+
+.var3{
+    padding-top: 10px;
+    margin:auto;
+    margin-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    padding-left: 200px;
 }
 
 .frontend h1{
+    padding-top: 20px;
     font-size: 20px;
     color: white;
     text-align: center;
@@ -251,19 +603,24 @@ body{
 .frontend p{
     font-size: 10px;
     color: white;
-    text-align: center;
+    text-align: left;
+}
+
+.backend .titulfront{
+    height: 7px;
+    font-size: 14px;
 }
 
 .backend{
-    background-color: #1a1a30;
-    margin-left: 5px;
+    margin:auto;
+    padding-top: 15px;
+    padding-bottom: 10px;
     border-radius: 10px;
-    height: 250px;
-    display: inline-block !important;
-    margin-left: 20px;
+    background-color: #1e1e33;
 }
 
 .backend h1{
+    padding-top: 20px;
     font-size: 20px;
     color: white;
     text-align: center;
@@ -341,6 +698,7 @@ footer{
 
 .part2{
     display: inline-block;
+    padding-left: 10px;
 }
 
 .part1 p{

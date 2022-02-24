@@ -2,6 +2,9 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Connexio amb el arxiu de estils -->
@@ -16,19 +19,20 @@
 </head>
 <!--===== Capçalera de la pagina ===== -->
 <header>
+    <section id="home">
     <div class="container">
         <div class="navEsquerra">
             <img src="./images/logo.png" width="50px">
         </div>
         <div class="navDreta">
-            <img src="./images/luna.png" width="50px">
+            <img src="./images/moon.svg" width="40px">
         </div>
         <!--===== Titul de la Pagina =====-->
         <div class="container">
             <div class="titul">
                 <h3>Hola, sóc</h3>
                 <h1>Carlos Morales</h1>
-                <h4>Desenvolupador Frontend</h4>
+                <h4>Desenvolupador Frontend & Backend</h4>
                 <div class="botons">
                     <button class="btnContacta">Contacta</button>
                     <button class="btnSobreMi">Sobre Mi</button>
@@ -37,37 +41,48 @@
             <div class="fonsimg">
                 <img src="./images/ImatgeFons.png" class="fonsImatge" width="50%">
             </div>
+            </section>
         </div>
     </div>
 </header>
 <!--===== Cos de la Pagina =====-->
 <body>
+    <div class="fixed-bottom">
+        <div class="nav">
+            <ul>
+                <li><a data-scroll href="#home"><img class="menu" src="./images/house-door.svg"></a></li>
+                <li><a data-scroll href="#sobreMi"><img class="menu" src="./images/person.svg"></a></li>
+                <li><a data-scroll href="#Experiencia"><img class="menu" src="./images/book.svg"></a></li>
+                <li><a data-scroll href="#treballsRecents"><img class="menu" src="./images/bag.svg"></a></li>
+                <li><a data-scroll href="#contacte"><img class="menu" src="./images/chat.svg"></a></li>
+            </ul>
+        </div>
+    </div>
     <!--===== Sobre Mi =====-->
-    <section class="sobreMi">
+    <section id="sobreMi">
         <div class="container">
             <div class="titolsobreMi">
                 <h2>Introducció</h2>
                 <h1>Sobre Mi</h1>
             </div>
-            <div class="sobreMijunt">
-                <div class="row" style="margin-top:50px">
+                <div class="row align-items-center" style="margin-top:50px">
                 <div class="imatge col-md-5">
-                    <img src="./images/paisaje.jpg" width="400px" height="400px">
+                    <img src="./images/paisaje.jpg">
                 </div>
                 <div class="imatgesJuntes col-md-6">
                     <div class="aboutMe">
                         <div class="experiencia">
-                            <img src="" alt="">
+                            <img src="./images/cup.svg" alt="">
                             <h1>Experiencia</h1>
                             <p>1 any</p>
                         </div>
                         <div class="completats">
-                            <img src="" alt="">
+                            <img src="./images/check-square.svg" alt="">
                             <h1>Completats</h1>
                             <p>+20 Projectes</p>
                         </div>
                         <div class="suport">
-                            <img src="" alt="">
+                            <img src="./images/calendar.svg" alt="">
                             <h1>Contacte</h1>
                             <p>Online 24/7</p>
                         </div>
@@ -78,69 +93,110 @@
                         <a class="btn btn-primary">Contacta</a>
                     </div>
                 </div>
-                </div>
             </div>
         </div>
     </section>
     <!--===== Experiencia =====-->
-    <section class="Experiencia">
+    <section id="Experiencia">
         <div class="container">
             <div class="titolsobreMi">
                 <h2>Habilitats</h2>
                 <h1>La Meva Experiencia</h1>
             </div>
             <div class="experience">
-                <div class="row">
-                <div class="frontend col-md-4">
-                    <img src="" alt="">
-                    <h1>Desenvolupador de Frontend</h1>
-                    <div class="part1 col-md-6">
-                        <p><strong>HTML</strong></p>
-                        <p>Basic</p>
-                        <p><strong>CSS</strong></p>
-                        <p>Avançat</p>
-                        <p><strong>JavaScript</strong></p>
-                        <p>Basic</p>
-                    </div>
-                    <div class="part2 col-md-5">
-                        <p><strong>Bootstrap</strong></p>
-                        <p>intermig</p>
-                        <p><strong>Git</strong></p>
-                        <p>Intermig</p>
+                <div class="row align-items-center">
+                    <div class="frontend">
+                        <h1>Desenvolupador de Frontend</h1>
+                        <div class="experiencies">
+                            <div class="var1">
+                                <div class="part1">
+                                    <img src="./images/patch-check-fill.svg">
+                                </div>
+                                <div class="part2">
+                                    <p class="titulfront"><strong>HTML</strong></p>
+                                    <p class="distancia">Basic</p>
+                                </div>
+                                <br>
+                                <div class="part1">
+                                    <img src="./images/patch-check-fill.svg">
+                                </div>
+                                <div class="part2">
+                                    <p class="titulfront"><strong>CSS</strong></p>
+                                    <p class="distancia">Avançat</p>
+                                </div>
+                                <br>
+                                <div class="part1">
+                                    <img src="./images/patch-check-fill.svg">
+                                </div>
+                                <div class="part2">
+                                    <p class="titulfront"><strong>JavaScript</strong></p>
+                                    <p class="distancia">Basic</p>
+                                </div>
+                                <br>
+                            </div>
+                            <div class="var2">
+                                <div class="part1">
+                                    <img src="./images/patch-check-fill.svg">
+                                </div>
+                                <div class="part2">
+                                    <p class="titulfront"><strong>Bootstrap</strong></p>
+                                    <p class="distancia">intermig</p>
+                                </div>
+                                <br>
+                                <div class="part1">
+                                    <img src="./images/patch-check-fill.svg">
+                                </div>
+                                <div class="part2">
+                                    <p class="titulfront"><strong>Git</strong></p>
+                                    <p class="distancia">Intermig</p>
+                                </div>
+                                <br>
+                                <div class="part1">
+                                    <img src="./images/patch-check-fill.svg">
+                                </div>
+                                <div class="part2">
+                                    <p class="titulfront"><strong>TypeScript</strong></p>
+                                    <p class="distancia">Intermig</p>
+                                </div>
+                            </div>
                     </div>
                 </div>
-                <div class="backend col-md-4">
-                    <img src="" alt="">
-                    <div class="part3 col-md-12">
-                        <h1>Desenvolupador de Backend</h1>
-                        <p>PHP</p>
-                        <p>intermig</p>
-                        <p>MySQL</p>
-                        <p>intermig</p>
+                <div class="backend">
+                    <h1>Desenvolupador de Backend</h1>
+                        <div class="experiencies2">
+                            <div class="var3">
+                                <div class="part1">
+                                    <img src="./images/patch-check-fill.svg">
+                                </div>
+                                <div class="part2">
+                                    <p class="titulfront"><strong>PHP</strong></p>
+                                    <p class="distancia">Intermig</p>
+                                </div>
+                                <br>
+                                <div class="part1">
+                                    <img src="./images/patch-check-fill.svg">
+                                </div>
+                                <div class="part2">
+                                    <p class="titulfront"><strong>MySQL</strong></p>
+                                    <p class="distancia">Intermig</p>
+                                </div>
+                                <br>
+                                <div class="part1">
+                                    <img src="./images/patch-check-fill.svg">
+                                </div>
+                                <div class="part2">
+                                    <p class="titulfront"><strong>Java</strong></p>
+                                    <p class="distancia">Basic</p>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </div>
         </div>
         </div>
     </section>
-    <!--===== Serveis =====-->
-    <!-- <section class="Serveis">
-        <div class="titolsobreMi">
-            <h2>Serveis</h2>
-            <h1>Que ofereixo</h1>
-        </div>
-        <div class="primerServei">
-
-        </div>
-        <div class="segonServei">
-
-        </div>
-        <div class="tercerServei">
-
-        </div>
-    </section> -->
     <!--===== Treballs Recents =====-->
-    <section class="treballsRecents">
+    <section id="treballsRecents">
         <div class="container">
             <div class="titolsobreMi">
                 <h2>Meu Portafoli</h2>
@@ -161,6 +217,7 @@
         </div>
     </section>
     <!--===== Contacta =====-->
+    <section id="contacte">
     <div class="contacta">
         <div class="titolsobreMi">
             <h2>Xarxes Socials</h2>
@@ -177,29 +234,28 @@
 
             </div>
         </div>
+        </div>
+    </section>
         
     <!--===== Formulari de Consulta =====-->
     <div class="container">
         <div class="formulariConsulta col-md-6">
             <form>
-                <div class="container">
                 <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
                 <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                 </div>
-                <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-                <br>
-            </form>
+              </form>
         </div>
     </div>
     </div>
@@ -223,6 +279,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
 </body>
 
 </html>
