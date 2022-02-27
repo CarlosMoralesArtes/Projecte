@@ -8,6 +8,7 @@ Tercer Color: #2C3256
 Quart Color: #48B5D6
 Cinque Color: #B3E0EE */
 
+/* Apartat dels media query */
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
     .imatge{
@@ -453,25 +454,7 @@ Cinque Color: #B3E0EE */
     scroll-behavior: smooth;
 }
 
-
-.fixed-bottom{
-    background: #0196C1 !important;
-    margin: 0 auto !important;
-    width: 270px;
-    height: 50px;
-    border-radius: 50px;
-    margin-bottom: 1000px;
-    opacity: 0.8 !important;
-    border: 2px solid #999999 !important;
-    align-items: center;
-    bottom: 20px !important;
-}
-
-.fixed-bottom .nav li{
-    list-style: none !important;
-    display: inline-block;
-}
-
+/* Estil del menu de la pagina */
 .menu{
     width: 15px;
 }
@@ -493,10 +476,6 @@ Cinque Color: #B3E0EE */
     padding: 5px;
 }
 
-body{
-    background-color: #101022 !important;
-}
-
 .navEsquerra{
     display: inline-block;
     padding-top: 70px;
@@ -508,6 +487,12 @@ body{
     padding-top: 70px;
 }
 
+/* Estil del body de la pagina */
+body{
+    background-color: #101022 !important;
+}
+
+/* Estil dels titols de la pagina */
 .titul{
     width: 100%;
 }
@@ -543,38 +528,6 @@ body{
     padding-right: 15px;
 }
 
-
-.btnSobreMi{
-    margin-left: 10px;
-    background-color: #0196C1;
-}
-
-.btnSobreMi:hover{
-    transition: 0.7s;
-    background-color: transparent;
-}
-
-.botons{
-    margin-top: 30px;
-    width: 100%;
-    text-align: center;
-}
-
-.btnContacta{
-    background-color: transparent;
-}
-
-.btnContacta:hover{
-    background-color: #0196C1;
-    transition-duration: 0.2s;
-}
-
-.fonsimg{
-    padding-top: 80px;
-    width: 100%;
-    text-align: center;
-}
-
 .titolsobreMi{
     padding-top: 100px;
     width: 100%;
@@ -592,6 +545,42 @@ body{
     font-size: 15px;
 }
 
+/* Estil del boto de l'apartat de sobre mi */
+.btnSobreMi{
+    margin-left: 10px;
+    background-color: #0196C1;
+}
+
+.btnSobreMi:hover{
+    transition: 0.7s;
+    background-color: transparent;
+}
+
+/* Estils dels botons */
+.botons{
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Estil del boto de contacta */
+.btnContacta{
+    background-color: transparent;
+}
+
+.btnContacta:hover{
+    background-color: #0196C1;
+    transition-duration: 0.2s;
+}
+
+/* Estil per al fons de la pagina */
+.fonsimg{
+    padding-top: 80px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Estils per les imatges de la pagina */
 .imatge{
     padding: 50px;
     padding-left: 100px;
@@ -610,6 +599,7 @@ body{
     border-radius: 20px;
 }
 
+/* Estil per al apartat de la meva experiencia */
 .experiencia{
     background-color: #1e1e33;
     border-radius: 10px;
@@ -623,6 +613,7 @@ body{
     background-color: #015bc1;
 }
 
+/* Estil per la part de projectes completats  */
 .completats{
     background-color: #1e1e33;
     margin-left: 5px;
@@ -637,6 +628,7 @@ body{
     background-color: #015bc1;
 }
 
+/* Estil per la part de suport de les hores on puc donar suport (24h) */
 .suport{
     background-color: #1e1e33;
     margin-left: 5px;
@@ -729,9 +721,6 @@ body{
     text-align: center;
 }
 
-/* Estil per les caixes del about me */
-
-
 /* Espaiat entre entre els titols i el contingut */
 
 .aboutMe{
@@ -790,6 +779,7 @@ body{
     padding-bottom: 10px;
 }
 
+/* Estils per els requadres de la part on surt el titol amb el nivell de cada llenguatge */
 .var1{
     padding-top: 10px;
     margin: auto;
@@ -864,13 +854,14 @@ body{
     text-align: center;
 }
 
+/* Estils del footer */
 footer{
     text-align: center;
-    background-color: #0196C1;
+    background-color: #1e1e33;
 }
 
 .copyrightFooter{
-    color: black;
+    color: white;
     font-weight: bold !important;
     font-size: 50px !important;
     padding-top: 100px;
@@ -881,6 +872,13 @@ footer{
     font-size: 10px;
 }
 
+.copyrightFooter a{
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+/* Estils per la part on surten els treballs recents */
 .primerTreball{
     background-color: #1a1a30;
     margin-left: 5px;
@@ -913,6 +911,59 @@ footer{
     padding-left: 50px;
 }
 
+.thumbnail{
+    text-align: center;
+    border: 5px solid #1e1e33;
+    border-radius: 10px;
+}
+
+.thumbnail:hover{
+    transition: 1s;
+    border-radius: 10px;
+    background-color: #1e1e33;
+}
+
+.thumbnail .imatgeFora{
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+    border-radius: 10px;
+}
+
+.thumbnail img:hover{
+    transition: 1s;
+    opacity: 1;
+}
+
+.thumbnail p{
+    padding: 20px;
+}
+
+/* Estils per el modal que s'executa quan se li dona clic al boto de Veure Informació */
+.contenidoModal{
+    text-align: left;
+    padding: 20px;
+}
+
+.contenidoModal img{
+    filter: invert(100%);
+    width: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenidoModal img:hover{
+    transition: 0.7s;
+    filter: invert(50%);
+}
+
+.modal-content{
+    background-color: #1e1e33 !important;
+    color: white;
+}
+
+/* Estils per el formulari de la pagina */
 .formulariConsulta{
     display: inline-block;
     width: 100%;
@@ -927,6 +978,14 @@ footer{
     width: 100% !important;
     height: 100% !important;
     display: inline-block;
+}
+
+/* Estils per el color de fons del formulari on se hi ha que colocar l'informació per enviar amb el formulari */
+
+.form-control{
+    background: #0196C1 !important;
+    border-radius: 10px !important;
+    border: none !important;
 }
 
 .part1{
@@ -958,6 +1017,7 @@ form{
     height: 100%;
 }
 
+/* Estils per el menu fixe de la pagina */
 .menuFixe{
     position: fixed;
     right: 0;
@@ -997,17 +1057,6 @@ form{
     padding-inline-start: 40px;
 }
 
-.informacio{
-    display: inline-block;
-    border-radius: 10px;
-    opacity: 0.7;
-}
-
-.informacio:hover{
-    transition: 1s;
-    opacity: 1;
-}
-
 .menuCentrat{
     margin: 0 !important;
     padding: 0 !important;
@@ -1024,59 +1073,37 @@ form{
     list-style: none !important;
 }
 
-.btn-primary:hover{
-    background-color: transparent !important;
-}
-
-.thumbnail{
-    text-align: center;
-    border: 5px solid #1e1e33;
+/* Estils per la part de la informacio on surt el mapa de la pagina */
+.informacio{
+    display: inline-block;
     border-radius: 10px;
-}
-
-.thumbnail:hover{
-    transition: 1s;
-    border-radius: 10px;
-    background-color: #1e1e33;
-}
-
-.thumbnail .imatgeFora{
-    width: 100%;
-    height: auto;
     opacity: 0.7;
-    border-radius: 10px;
 }
 
-.thumbnail img:hover{
+.informacio:hover{
     transition: 1s;
     opacity: 1;
 }
 
-.thumbnail p{
-    padding: 20px;
+.informacioHeader{
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
-.contenidoModal{
-    text-align: left;
-    padding: 20px;
-}
-
-.contenidoModal img{
+.informacioHeader{
+    position: fixed !important;
+    bottom: 40px !important;
+    left: 20px !important;
     filter: invert(100%);
-    width: 5%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-.contenidoModal img:hover{
+.informacioHeader img:hover{
     transition: 0.7s;
     filter: invert(50%);
 }
 
-.modal-content{
-    background-color: #1e1e33 !important;
-    color: white;
+.btn-primary:hover{
+    background-color: transparent !important;
 }
 
 

@@ -8,12 +8,11 @@
     <link rel="stylesheet" href="estils.css">
     <!-- Icona que es coloca en la pagina -->
     <link rel="shortcut icon" href="./images/logo.png">
-    <!-- Conexio amb bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
-    <!-- Conexio amb els estils de aos -->
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <!-- AOS library   -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Titul de la pagina -->
     <title>Carlos Morales Artés</title>
 </head>
@@ -50,6 +49,9 @@
             </div>
             <div class="fonsimg">
                 <img src="./images/ImatgeFons.png" class="fonsImatge" width="50%">
+                <div class="informacioHeader">
+                    <a href="https://github.com/CarlosMoralesArtes"><img src="./images/github.svg" width="30px"></a>
+                </div>
             </div>
             </section>
         </div>
@@ -66,9 +68,11 @@
             </div>
             <br>
                 <div class="row align-items-center" style="margin-top:50px background-color='#1e1e33'">
+                <!-- Logo del apartat on surt la part que para sobre mi -->
                 <div data-aos="fade-right" class="imatge col-md-5">
                     <img src="./images/logo.png">
                 </div>
+                <!-- Apartat on s'explica la meva experiencia, projectes completats i suport que puc donar (24h) -->
                 <div data-aos="fade-left" class="imatgesJuntes col-md-6">
                     <div data-aos="fade-left" class="aboutMe">
                         <div class="experiencia">
@@ -104,6 +108,7 @@
                 <h2>Habilitats</h2>
                 <h1>La Meva Experiencia</h1>
             </div>
+            <!-- Apartat on es mostra el titol amb el nivell de cada en un requadre -->
             <div class="experience">
                 <div class="row align-items-center">
                     <div data-aos="fade-right" class="frontend">
@@ -206,7 +211,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-6 col-md-6">
-                  <div class="thumbnail">
+                  <div data-aos="fade-right" class="thumbnail">
                     <img class="imatgeFora" src="./images/AmazonBlue.png">
                     <div class="caption">
                         <br>
@@ -243,23 +248,23 @@
                   </div>
                 </div>
                 <div class="col-sm-6 col-md-6">
-                    <div class="thumbnail">
+                    <div data-aos="fade-left" class="thumbnail">
                       <img class="imatgeFora" src="./images/GestorNoticies.png">
                       <div class="caption">
                           <br>
-                        <h3 style="color:white">Gestor de Noticies</h3>
+                        <h3 style="color:white">Creador de Noticies</h3>
                         <small style="color: white">TypeScript</small>
                         <p style="color: white">Pagina de registre de noticies, i creacio de menu dinamic.</p>
                         <!-- Button trigger modal -->
                           <!-- Large modal -->
-                          <button type="button" class="btn btn-primary" style="margin-bottom:20px" data-toggle="modal" data-target=".bd-example-modal-lg">Veure Informació</button>
+                          <button type="button" class="btn btn-primary" style="margin-bottom:20px" data-toggle="modal" data-target=".bd-example-modal-lg2">Veure Informació</button>
                           <br>
-                          <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                          <div class="modal fade bd-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                               <div class="modal-dialog modal-lg">
                                   <div class="modal-content">
                                       <img src="./images/GestorNoticies.png" width="100%" height=auto>
                                       <br>
-                                      <h1>Gestor de Noticies</h1>
+                                      <h1>Creador de Noticies</h1>
                                       <small>TypeScript</small>
                                       <p>Pagina de registre de noticies, i creacio de menu dinamic.</p>
                                       <div class="contenidoModal">
@@ -267,7 +272,7 @@
                                           <p>· <strong>Creacio de Noticies Dinamiques</strong> <small>Part per <strong>crear</strong> noticies dinamiques les quals funcionen amb appendChild</small></p>
                                           <p>· <strong>Creacio de Menus Dinamics</strong> <small>Part per <strong>crear</strong> menus dinamics els quals funcionen amb appendChild</p>
                                           <p>Pots descarregar el projecte aqui:</p>
-                                          <a href="https://github.com/CarlosMoralesArtes/MoralesCarlos_DAW2_M7_UF3_ACT2.3"><img src="./images/github.svg" width="30px"></a>
+                                          <a href="https://github.com/CarlosMoralesArtes/Creador-de-Noticies"><img src="./images/github.svg" width="30px"></a>
                                       </div>
                                       <br>
                                   </div>
@@ -290,10 +295,10 @@
     <!--===== Formulari de Consulta =====-->
     <div class="container">
         <div class="row align-items-center">
-            <div class="informacio col-md-6">
+            <div data-aos="fade-right" class="informacio col-md-6">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11946.76387165809!2d2.1728346365627687!3d41.532634218015836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4be57067bb0f3%3A0x4dac9b5228ccc0b2!2s08130%20Santa%20Perp%C3%A8tua%20de%20Mogoda%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1645879328704!5m2!1ses!2ses" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
-            <div data-aos="fade-up" class="formulariConsulta col-md-6 ">
+            <div data-aos="fade-left" class="formulariConsulta col-md-6 ">
                 <form">
                     <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
@@ -310,7 +315,7 @@
                         <input type="text" class="form-control" id="exampleInputPassword1">
                     </div>
                     <br>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="submit" class="btn btn-primary" style="width: 100%">Enviar</button>
                 </form>
             </div>
         </div>
@@ -318,10 +323,16 @@
     </div>
     </section>
     <br><br>
+    <!-- Part del footer amb un menu -->
     <footer>
-        <div class="copyrightFooter" style="color:white">
+        <div class="copyrightFooter">
             <h1>Carlos Morales</h1>
-            <p><span style="color:rgb(79, 79, 202)">©Carlos Morales</span> · All rights reserved</p>
+            <a href="./index.html">Home</a>
+            <a href="#sobreMi">Sobre Mi</a>
+            <a href="#Experiencia">Experiencia</a>
+            <a href="#treballsRecents">Treballs Recents</a>
+            <a href="#contacte">Contacta</a>
+            <p><a href="https://github.com/CarlosMoralesArtes"><span style="color:rgb(141, 141, 238)">©Carlos Morales</span></a> · All rights reserved</p>
         </div>
         
     </footer>
