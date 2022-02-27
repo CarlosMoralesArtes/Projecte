@@ -2,9 +2,6 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <script>
-        var scroll = new SmoothScroll('a[href*="#"]');
-    </script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Connexio amb el arxiu de estils -->
@@ -13,29 +10,42 @@
     <link rel="shortcut icon" href="./images/logo.png">
     <!-- Conexio amb bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Conexio amb els estils de aos -->
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <!-- Titul de la pagina -->
     <title>Carlos Morales Artés</title>
 </head>
+
+<!-- ===== Menu sense efecte de entrada ===== -->
+<div class="menuCentrat">
+    <div class="nav">
+        <ul>
+            <li><a href="#home"><img class="menu" src="./images/house-door.svg"></a></li>
+            <li><a href="#sobreMi"><img class="menu" src="./images/person.svg"></a></li>
+            <li><a href="#Experiencia"><img class="menu" src="./images/book.svg"></a></li>
+            <li><a href="#treballsRecents"><img class="menu" src="./images/bag.svg"></a></li>
+            <li><a href="#contacte"><img class="menu" src="./images/chat.svg"></a></li>
+        </ul>
+    </div>
+</div>
 <!--===== Capçalera de la pagina ===== -->
-<header>
+<header data-aos="fade-down">
     <section id="home">
     <div class="container">
-        <div class="navEsquerra">
+        <div data-aos="fade-right" class="navEsquerra">
             <img src="./images/logo.png" width="50px">
-        </div>
-        <div class="navDreta">
-            <img src="./images/moon.svg" width="40px">
         </div>
         <!--===== Titul de la Pagina =====-->
         <div class="container">
-            <div class="titul">
+            <div data-aos="fade-down" class="titul">
                 <h3>Hola, sóc</h3>
                 <h1>Carlos Morales</h1>
                 <h4>Desenvolupador Frontend & Backend</h4>
                 <div class="botons">
-                    <button class="btnContacta">Contacta</button>
-                    <button class="btnSobreMi">Sobre Mi</button>
+                    <a href="#contacte"><button class="btnContacta">Contacta</button></a>
+                    <a href="#sobreMi"><button class="btnSobreMi">Sobre Mi</button></a>
                 </div>
             </div>
             <div class="fonsimg">
@@ -46,31 +56,21 @@
     </div>
 </header>
 <!--===== Cos de la Pagina =====-->
-<body>
-    <div class="fixed-bottom">
-        <div class="nav">
-            <ul>
-                <li><a data-scroll href="#home"><img class="menu" src="./images/house-door.svg"></a></li>
-                <li><a data-scroll href="#sobreMi"><img class="menu" src="./images/person.svg"></a></li>
-                <li><a data-scroll href="#Experiencia"><img class="menu" src="./images/book.svg"></a></li>
-                <li><a data-scroll href="#treballsRecents"><img class="menu" src="./images/bag.svg"></a></li>
-                <li><a data-scroll href="#contacte"><img class="menu" src="./images/chat.svg"></a></li>
-            </ul>
-        </div>
-    </div>
+<body data-aos="fade-down">
     <!--===== Sobre Mi =====-->
     <section id="sobreMi">
         <div class="container">
-            <div class="titolsobreMi">
+            <div data-aos="fade-down" class="titolsobreMi">
                 <h2>Introducció</h2>
                 <h1>Sobre Mi</h1>
             </div>
-                <div class="row align-items-center" style="margin-top:50px">
-                <div class="imatge col-md-5">
-                    <img src="./images/paisaje.jpg">
+            <br>
+                <div class="row align-items-center" style="margin-top:50px background-color='#1e1e33'">
+                <div data-aos="fade-right" class="imatge col-md-5">
+                    <img src="./images/logo.png">
                 </div>
-                <div class="imatgesJuntes col-md-6">
-                    <div class="aboutMe">
+                <div data-aos="fade-left" class="imatgesJuntes col-md-6">
+                    <div data-aos="fade-left" class="aboutMe">
                         <div class="experiencia">
                             <img src="./images/cup.svg" alt="">
                             <h1>Experiencia</h1>
@@ -90,7 +90,8 @@
                     <div class="textsobreMi">
                         <br>
                         <p>Soc desenvolupador de Frontend i Backend<br>Tinc un any de experiencia amb mes de 20 projectes creats<br>Amb una actitud molt positiva i seria per el treball.</p>
-                        <a class="btn btn-primary">Contacta</a>
+                        <br>
+                        <a class="btn btn-primary" style="width: 400px" href="#contacte">Contacta</a>
                     </div>
                 </div>
             </div>
@@ -99,13 +100,13 @@
     <!--===== Experiencia =====-->
     <section id="Experiencia">
         <div class="container">
-            <div class="titolsobreMi">
+            <div data-aos="fade-down" class="titolsobreMi">
                 <h2>Habilitats</h2>
                 <h1>La Meva Experiencia</h1>
             </div>
             <div class="experience">
                 <div class="row align-items-center">
-                    <div class="frontend">
+                    <div data-aos="fade-right" class="frontend">
                         <h1>Desenvolupador de Frontend</h1>
                         <div class="experiencies">
                             <div class="var1">
@@ -161,7 +162,7 @@
                             </div>
                     </div>
                 </div>
-                <div class="backend">
+                <div data-aos="fade-left" class="backend">
                     <h1>Desenvolupador de Backend</h1>
                         <div class="experiencies2">
                             <div class="var3">
@@ -198,71 +199,129 @@
     <!--===== Treballs Recents =====-->
     <section id="treballsRecents">
         <div class="container">
-            <div class="titolsobreMi">
+            <div data-aos="fade-down" class="titolsobreMi">
                 <h2>Meu Portafoli</h2>
                 <h1>Treballs Recents</h1>
+                <br><br>
             </div>
-            <div class="primerTreball">
-                <img src="./images/paisaje.jpg" width="200px" height="300px">
-            </div>
-            <div class="segonTreball">
-                <img src="./images/paisaje.jpg" width="200px" height="300px">
-            </div>
-            <div class="tercerTreball">
-                <img src="./images/paisaje.jpg" width="200px" height="300px">
-            </div>
-            <div class="quartTreball">
-                <img src="./images/paisaje.jpg" width="200px" height="300px">
-            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="thumbnail">
+                    <img class="imatgeFora" src="./images/AmazonBlue.png">
+                    <div class="caption">
+                        <br>
+                      <h3 style="color:white">Botiga Virtual</h3>
+                      <small style="color: white">PHP</small>
+                      <p style="color: white">Pagina de compres, amb plana administrador, basada en PHP.</p>
+                      <!-- Button trigger modal -->
+                        <!-- Large modal -->
+                        <button type="button" class="btn btn-primary" style="margin-bottom:20px" data-toggle="modal" data-target=".bd-example-modal-lg">Veure Informació</button>
+                        <br>
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <img src="./images/AmazonBlue.png" width="100%" height=auto>
+                                    <br>
+                                    <h1>Botiga virtual</h1>
+                                    <small>PHP</small>
+                                    <p>La boriga virtual ha sigut creada per practicar amb PHP utilitzant una base de dades local la cual registra totes les compres, productes.</p>
+                                    <div class="contenidoModal">
+                                        <h2>Planes de la pagina</h2>
+                                        <strong>Unicament pot funcionar gracies a una base de dades registrada.</strong>
+                                        <p>· Registre <small>Seccio per <strong>registrar-se</strong> el usuari on es guarden les dades en la base de dades.</small></p>
+                                        <p>· Login <small>Seccio per <strong>loguerar-se</strong> el usuari on es comparen les dades (amb la contrasenya encriptada amb <strong>md5</strong>) de la base de dades</small></p>
+                                        <p>· Botiga <small>On es <strong>mostren tots els productes</strong> colocats en la base de dades, amb control de errors per quan no hi ha stock.</small></p>
+                                        <p>· Administrador <small>Es la plana on unicament pot entrar el usuari administrador per <srong>Insertar, Eliminar, Modificar</srong> els productes.</small></p>
+                                        <p>Pots descarregar el projecte aqui:</p>
+                                        <a href="https://github.com/CarlosMoralesArtes/MoralesCarlos_DAW2_M7_UF3_ACT2.3"><img src="./images/github.svg" width="30px"></a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <div class="thumbnail">
+                      <img class="imatgeFora" src="./images/GestorNoticies.png">
+                      <div class="caption">
+                          <br>
+                        <h3 style="color:white">Gestor de Noticies</h3>
+                        <small style="color: white">TypeScript</small>
+                        <p style="color: white">Pagina de registre de noticies, i creacio de menu dinamic.</p>
+                        <!-- Button trigger modal -->
+                          <!-- Large modal -->
+                          <button type="button" class="btn btn-primary" style="margin-bottom:20px" data-toggle="modal" data-target=".bd-example-modal-lg">Veure Informació</button>
+                          <br>
+                          <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-lg">
+                                  <div class="modal-content">
+                                      <img src="./images/GestorNoticies.png" width="100%" height=auto>
+                                      <br>
+                                      <h1>Gestor de Noticies</h1>
+                                      <small>TypeScript</small>
+                                      <p>Pagina de registre de noticies, i creacio de menu dinamic.</p>
+                                      <div class="contenidoModal">
+                                          <h2>Parts de la Pagina</h2>
+                                          <p>· <strong>Creacio de Noticies Dinamiques</strong> <small>Part per <strong>crear</strong> noticies dinamiques les quals funcionen amb appendChild</small></p>
+                                          <p>· <strong>Creacio de Menus Dinamics</strong> <small>Part per <strong>crear</strong> menus dinamics els quals funcionen amb appendChild</p>
+                                          <p>Pots descarregar el projecte aqui:</p>
+                                          <a href="https://github.com/CarlosMoralesArtes/MoralesCarlos_DAW2_M7_UF3_ACT2.3"><img src="./images/github.svg" width="30px"></a>
+                                      </div>
+                                      <br>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
         </div>
     </section>
     <!--===== Contacta =====-->
     <section id="contacte">
     <div class="contacta">
-        <div class="titolsobreMi">
+        <div data-aos="fade-down" class="titolsobreMi">
             <h2>Xarxes Socials</h2>
             <h1>Contacta amb Mi</h1>
         </div>
-        <div class="info">
-            <div class="email">
-
-            </div>
-            <div class="whatsapp">
-
-            </div>
-            <div class="twitter">
-
-            </div>
         </div>
-        </div>
-    </section>
-        
+        <br><br>
     <!--===== Formulari de Consulta =====-->
     <div class="container">
-        <div class="formulariConsulta col-md-6">
-            <form>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
+        <div class="row align-items-center">
+            <div class="informacio col-md-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11946.76387165809!2d2.1728346365627687!3d41.532634218015836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4be57067bb0f3%3A0x4dac9b5228ccc0b2!2s08130%20Santa%20Perp%C3%A8tua%20de%20Mogoda%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1645879328704!5m2!1ses!2ses" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div data-aos="fade-up" class="formulariConsulta col-md-6 ">
+                <form">
+                    <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                    <label for="exampleInputPassword1">Nom</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Missatge General</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
         </div>
     </div>
     </div>
+    </section>
+    <br><br>
     <footer>
-        <div class="copyrightFooter">
+        <div class="copyrightFooter" style="color:white">
             <h1>Carlos Morales</h1>
-            <p>©Carlos Morales · All rights reserved</p>
+            <p><span style="color:rgb(79, 79, 202)">©Carlos Morales</span> · All rights reserved</p>
         </div>
         
     </footer>
@@ -279,8 +338,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -11,6 +11,9 @@ Cinque Color: #B3E0EE */
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
     .imatge{
+        padding: 70px !important;
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
         width: 550px !important;
         height: 400px !important;
         margin-left: 0px !important;
@@ -22,12 +25,14 @@ Cinque Color: #B3E0EE */
     }
 
     .imatgesJuntes{
+        padding-left: 50px !important;
+        border-radius: 10px !important;
         width: 500px !important;
     }
 
     .suport{
-        width: 145px !important;
-        height: 100px !important;
+        width: 100px !important;
+        height: 90px !important;
     }
 
     .suport h1{
@@ -35,8 +40,8 @@ Cinque Color: #B3E0EE */
     }
 
     .experiencia{
-        width: 145px !important;
-        height: 100px !important;
+        width: 100px !important;
+        height: 90px !important;
         text-align: center;
     }
 
@@ -46,8 +51,8 @@ Cinque Color: #B3E0EE */
     }
 
     .completats{
-        width: 145px !important;
-        height: 100px !important;
+        width: 100px !important;
+        height: 90px !important;
     }
 
     .completats h1{
@@ -65,11 +70,37 @@ Cinque Color: #B3E0EE */
         height: 300px !important;
         margin-top: 20px !important;
     }
+
+    .primerTreball{
+        margin-left: 5px;
+        height: 250px;
+        margin-left: 90px;
+        margin-top: 50px;
+    }
+    
+    .primerTreball .TextTreball1{
+        visibility: hidden;
+    }
+    
+    .segonTreball{
+        margin-left: 5px;
+        border-radius: 10px;
+        height: 250px;
+        margin-left: 90px;
+        margin-top: 50px;
+    }
+    
+    .segonTreball .TextTreball2{
+        visibility: hidden;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .imatge{
+        padding: 70px !important;
+        padding-left: 150px !important;
+        padding-right: 150px !important;
         width: 500px !important;
         height: 350px !important;
         margin-left: 25px !important;
@@ -81,8 +112,26 @@ Cinque Color: #B3E0EE */
     }
 
     .imatgesJuntes{
+        padding-left: 50px !important;
+        border-radius: 10px !important;
         width: 500px !important;
         margin-left: 25px !important;
+    }
+
+    .experiencia{
+        width: 120px !important;
+        height: 120px !important;
+        text-align: center;
+    }
+
+    .completats{
+        width: 120px !important;
+        height: 120px !important;
+    }
+
+    .suport{
+        width: 120px !important;
+        height: 120px !important;
     }
 
     .experience .backend{
@@ -95,11 +144,37 @@ Cinque Color: #B3E0EE */
         width: 500px !important;
         height: 300px !important;
     }
+
+    .primerTreball{
+        margin-left: 5px;
+        height: 250px;
+        margin-left: 90px;
+        margin-top: 50px;
+    }
+    
+    .primerTreball .TextTreball1{
+        visibility: hidden;
+    }
+    
+    .segonTreball{
+        margin-left: 5px;
+        border-radius: 10px;
+        height: 250px;
+        margin-left: 90px;
+        margin-top: 50px;
+    }
+    
+    .segonTreball .TextTreball2{
+        visibility: hidden;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .imatge{
+        padding: 100px !important;
+        padding-left: 200px !important;
+        padding-right: 200px !important;
         width: 600px !important;
         margin-left: 55px !important;
         height: 400px !important;
@@ -111,25 +186,49 @@ Cinque Color: #B3E0EE */
     }
     
     .imatgesJuntes{
-        width: 500px !important;
+        padding-left: 10px !important;
+        border-radius: 10px !important;
+        width: 600px !important;
+        padding-bottom: 20px !important;
+        padding-right: 20px !important;
         margin-left: 105px !important;
-    }
-
-    .experience .backend{
-        margin-top: 20px !important;
-        width: 500px !important;
-        height: 300px !important;
     }
 
     .experience .frontend{
         width: 500px !important;
         height: 300px !important;
     }
+
+    .primerTreball{
+        margin-left: 5px;
+        height: 250px;
+        margin-left: 90px;
+        margin-top: 50px;
+    }
+    
+    .primerTreball .TextTreball1{
+        visibility: hidden;
+    }
+    
+    .segonTreball{
+        margin-left: 5px;
+        border-radius: 10px;
+        height: 250px;
+        margin-left: 90px;
+        margin-top: 50px;
+    }
+    
+    .segonTreball .TextTreball2{
+        visibility: hidden;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
     .imatge{
+        padding: 50px !important;
+        padding-left: 90px !important;
+        padding-right: 90px !important;
         width: 400px !important;
         height: 320px !important;
     }
@@ -141,6 +240,8 @@ Cinque Color: #B3E0EE */
 
     .imatgesJuntes{
         width: 400px !important;
+        padding-left: 50px !important;
+        border-radius: 10px !important;
         margin-left: 0px;
         text-align: left;
     }
@@ -184,11 +285,37 @@ Cinque Color: #B3E0EE */
         width: 500px !important;
         height: 300px !important;
     }
+
+    .primerTreball{
+        margin-left: 5px;
+        height: 250px;
+        margin-left: 90px;
+        margin-top: 50px;
+    }
+    
+    .primerTreball .TextTreball1{
+        visibility: hidden;
+    }
+    
+    .segonTreball{
+        margin-left: 5px;
+        border-radius: 10px;
+        height: 250px;
+        margin-left: 90px;
+        margin-top: 50px;
+    }
+    
+    .segonTreball .TextTreball2{
+        visibility: hidden;
+    }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .imatge{
+        padding: 50px !important;
+        padding-left: 100px !important;
+        padding-right: 100px !important;
         width: 500px !important;
         height: 400px !important;
     }
@@ -199,6 +326,8 @@ Cinque Color: #B3E0EE */
     }
 
     .imatgesJuntes{
+        border-radius: 10px !important;
+        padding-left: 50px !important;
         width: 400px !important;
     }
 
@@ -212,11 +341,39 @@ Cinque Color: #B3E0EE */
         width: 500px !important;
         height: 300px !important;
     }
+
+    .primerTreball{
+        margin-left: 5px;
+        height: 250px;
+        margin-left: 90px;
+        margin-top: 50px;
+    }
+    
+    .primerTreball .TextTreball1{
+        padding-left: 50px;
+        visibility: visible;
+    }
+    
+    .segonTreball{
+        margin-left: 5px;
+        border-radius: 10px;
+        height: 250px;
+        margin-left: 90px;
+        margin-top: 50px;
+    }
+    
+    .segonTreball .TextTreball2{
+        visibility: visible;
+        padding-left: 50px;
+    }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
     .imatge{
+        padding: 50px !important;
+        padding-left: 100px !important;
+        padding-right: 100px !important;
         width: 500px !important;
         height: 400px !important;
         margin-left: 100px !important;
@@ -228,6 +385,8 @@ Cinque Color: #B3E0EE */
     }
 
     .imatgesJuntes{
+        padding-left: 50px !important;
+        border-radius: 10px !important;
         width: 500px !important;
         height: 400px !important;
     }
@@ -261,12 +420,39 @@ Cinque Color: #B3E0EE */
         width: 500px !important;
         height: 300px !important;
     }
+
+    .primerTreball{
+        margin-left: 5px;
+        height: 250px;
+        margin-left: 90px;
+        margin-top: 50px;
+        visibility: visible;
+    }
+    
+    .primerTreball .TextTreball1{
+        padding-left: 50px;
+    }
+    
+    .segonTreball{
+        margin-left: 5px;
+        border-radius: 10px;
+        height: 250px;
+        margin-left: 90px;
+        margin-top: 50px;
+    }
+    
+    .segonTreball .TextTreball2{
+        padding-left: 50px;
+        visibility: visible;
+    }
 }
 
 /* Estil que s'aplica a tota la pagina web */
 *{
     font-family: 'Rubik', sans-serif;
+    scroll-behavior: smooth;
 }
+
 
 .fixed-bottom{
     background: #0196C1 !important;
@@ -291,12 +477,20 @@ Cinque Color: #B3E0EE */
 }
 
 .nav ul li{
-    padding: 10px;
+    padding: 5px;
+}
+
+.nav ul li img{
+    height: 100%;
+    width: 100%;
+    padding: 5px;
 }
 
 .nav ul li:hover{
+    transition: 0.5s;
     background: #015bc1 !important;
-    border-radius: 100%;
+    border-radius: 150px;
+    padding: 5px;
 }
 
 body{
@@ -349,9 +543,15 @@ body{
     padding-right: 15px;
 }
 
+
 .btnSobreMi{
     margin-left: 10px;
     background-color: #0196C1;
+}
+
+.btnSobreMi:hover{
+    transition: 0.7s;
+    background-color: transparent;
 }
 
 .botons{
@@ -387,12 +587,15 @@ body{
 }
 
 .titolsobreMi h2{
-    color: #2C3256;
+    color: white;
     font-weight: 900;
     font-size: 15px;
 }
 
 .imatge{
+    padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
     border-radius: 20px;
     width: 400px;
     height: 400px;
@@ -415,6 +618,11 @@ body{
     display: inline-block;
 }
 
+.experiencia:hover{
+    transition: 0.7s;
+    background-color: #015bc1;
+}
+
 .completats{
     background-color: #1e1e33;
     margin-left: 5px;
@@ -422,6 +630,11 @@ body{
     width: 150px;
     height: 120px;
     display: inline-block;
+}
+
+.completats:hover{
+    transition: 0.7s;
+    background-color: #015bc1;
 }
 
 .suport{
@@ -432,6 +645,11 @@ body{
     height: 120px;
     display: inline-block !important;
     position: relative;
+}
+
+.suport:hover{
+    transition: 0.7s;
+    background-color: #015bc1;
 }
 
 /* Estil per les imatges del sobre mi */
@@ -457,6 +675,8 @@ body{
 }
 
 .imatgesJuntes{
+    padding-left: 50px !important;
+    border-radius: 10px !important;
     display: inline-block !important;
 }
 
@@ -518,10 +738,21 @@ body{
     margin-top: 50px;
 }
 
+#sobreMi{
+    background: url(./images/fonsSobreMi.png) !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
+
 /* Estil per el text del about me */
 
 .textsobreMi{
     color: white;
+}
+
+#sobreMi{
+    padding-bottom: 50px;
+    background-color: #1a1a30;
 }
 
 /* Estil per la part de la meva experiencia */
@@ -659,6 +890,13 @@ footer{
     margin-left: 90px;
     margin-top: 50px;
 }
+
+.primerTreball .TextTreball1{
+    display: inline-block;
+    color: white;
+    padding-left: 50px;
+}
+
 .segonTreball{
     background-color: #1a1a30;
     margin-left: 5px;
@@ -668,28 +906,27 @@ footer{
     margin-left: 90px;
     margin-top: 50px;
 }
-.tercerTreball{
-    background-color: #1a1a30;
-    margin-left: 5px;
-    border-radius: 10px;
-    height: 250px;
+
+.segonTreball .TextTreball2{
     display: inline-block;
-    margin-left: 90px;
-    margin-top: 50px;
-}
-.quartTreball{
-    background-color: #1a1a30;
-    margin-left: 5px;
-    border-radius: 10px;
-    height: 250px;
-    display: inline-block;
-    margin-left: 90px;
-    margin-top: 50px;
+    color: white;
+    padding-left: 50px;
 }
 
 .formulariConsulta{
-    margin-left: 25%;
-    margin-bottom: 100px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: #1e1e33;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.formulariConsulta form{
+    width: 100% !important;
+    height: 100% !important;
+    display: inline-block;
 }
 
 .part1{
@@ -708,5 +945,139 @@ footer{
 .part1 small{
     font-size: 10px !important;
 }
+
+form{
+    background-color: #1a1a30;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.treballs{
+    border-radius: 10px;
+    height: 100%;
+}
+
+.menuFixe{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+}
+    
+.menuFixe {
+    background: #0196C1 !important;
+    margin: 0 auto !important;
+    width: 270px;
+    height: 50px;
+    border-radius: 50px;
+    margin-bottom: 1000px;
+    opacity: 0.8 !important;
+    border: 2px solid #999999 !important;
+    align-items: center;
+    bottom: 20px !important;
+}
+
+.menuFixe .nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.menu ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.informacio{
+    display: inline-block;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+
+.informacio:hover{
+    transition: 1s;
+    opacity: 1;
+}
+
+.menuCentrat{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+.menuCentrat{
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 20px !important;
+}
+
+.menuCentrat .nav li{
+    list-style: none !important;
+}
+
+.btn-primary:hover{
+    background-color: transparent !important;
+}
+
+.thumbnail{
+    text-align: center;
+    border: 5px solid #1e1e33;
+    border-radius: 10px;
+}
+
+.thumbnail:hover{
+    transition: 1s;
+    border-radius: 10px;
+    background-color: #1e1e33;
+}
+
+.thumbnail .imatgeFora{
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+    border-radius: 10px;
+}
+
+.thumbnail img:hover{
+    transition: 1s;
+    opacity: 1;
+}
+
+.thumbnail p{
+    padding: 20px;
+}
+
+.contenidoModal{
+    text-align: left;
+    padding: 20px;
+}
+
+.contenidoModal img{
+    filter: invert(100%);
+    width: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenidoModal img:hover{
+    transition: 0.7s;
+    filter: invert(50%);
+}
+
+.modal-content{
+    background-color: #1e1e33 !important;
+    color: white;
+}
+
 
 
